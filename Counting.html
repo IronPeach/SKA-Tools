@@ -13,19 +13,6 @@
 		<script>
 			function Geometry(){
 				document.open()
-				function TwoD(){
-					document.open()
-					document.write("\
-						<div align='center'>\
-							<h1>\
-								<font face='Helvetica'>\
-									Plase select what kind of cauculating did you need.\
-								</font>\
-							</h1>\
-						</div>\
-						")
-					document.body.style.backgroundColor = "#66ccff"
-				}
 				document.write("\
 					<div align='center'>\
 						<font face='Helvetica'>\
@@ -36,12 +23,30 @@
 					</div>\
 					")
 				
-				document.write("\
-					<div align='center'>\
-					<button type='button onclick='TwoD()'>2D Shape</button>&nbsp;\
-					<button type='button'>3D Shape</button>\
-					</div>\
-					")
+
+
+				var btn = document.createElement("BUTTON");
+				btn.onclick = function Area(){
+					document.open()
+					document.write("\
+						<div align='center'>\
+							<font face='Helvetica'>\
+								<h1>\
+									Please select your shape.\
+								</h1>\
+							</font>\
+						</div>\
+						")
+					document.write("\
+						<script>\
+						function \
+						</scr"+"ipt>\
+						")
+					document.body.style.backgroundColor = "#66ccff"
+				}
+				var Text = document.createTextNode("Area")
+				btn.appendChild(Text)
+				document.body.appendChild(btn)
 				document.body.style.backgroundColor = "#66ccff"
 			}
 		</script>
