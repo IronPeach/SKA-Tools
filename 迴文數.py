@@ -54,7 +54,13 @@ if answer == 'y':
 	print ('Good, now go to the main part! And I\'m gonna ask you:')
 else:
 	print('Palindromic number mean the number that is the same either fromm left to right, and right to left. For example, 1234567654321 is a Palindromic number because both side are the same!3883 can be one, 77 is one too! The way you change a number to Palindromic number is that you add the number with its opposite, for example, 32 would add 23 because it\'s opposite, 32 + 23 = 55! It\'s a Palindromic! If you don\'t get a Palindromic number, try again with your new number Like 67 + 76 = 143 ; 143 + 341 = 484. But there is some number that can\'t be Palindromic(Maybe, who knows?), those are called Lychrel Number, 196 is the most likely the smallest Lychrel (BTW, the world record of Palindromic is 1186060307891929990, it takes add 261 times to make it Palindromic. Maybe you can be the next world record holder! Keep useign our tools! ^_^). Now, go to the main part and I\'m gonna ask you:')
-print("what number did you want to try?")
-Number = input()
+Number = input("The number I want to try is:")
+
+if Number.isnumeric() == True:
+	Main(Number)
+else:
+	while Number.isnumeric() != True:
+		print("Please type a number... Please...")
+		Number = input("The number I want to try is:")
 Main(Number)
 #1186060307891929990! What a magical number! It take 261 times to make a Palindromic!
