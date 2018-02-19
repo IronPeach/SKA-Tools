@@ -20,10 +20,16 @@ def Main(Num):
 				print ('I mean that You should type either y or n, it stands for yes and no!')
 			if answer == 'y':
 				a = input('The number I want to try is:')
-				n1 = int(a)
-				n2 = int(a[::-1])
-				a = n1 + n2
-				continue
+				if a.isnumeric() == True:
+					n1 = int(a)
+					n2 = int(a[::-1])
+					a = n1 + n2
+					continue
+				else:
+					while a.isnumeric() != True:
+						print("Numbers only... Please...")
+						a = input("The number I want to try is:")
+					continue
 			else:
 				print ('Thanks for useing SKA Technology, have a nice day! :)')
 				sl = 5
@@ -42,7 +48,7 @@ def Main(Num):
 			
 			
 #Ask number.
-print('Welcome to use SKA useless Palindromic Number machine v 1.0.1!')
+print('Welcome to use SKA useless Palindromic Number machine v 1.0.3!')
 print('By:Iron_Peach')
 print('If you have bug, please report that to Iron_Peach@protonmail.com')
 while True:
